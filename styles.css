@@ -1,0 +1,707 @@
+/* Reset e Variáveis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1e40af;
+    --primary-dark: #1e3a8a;
+    --primary-light: #3b82f6;
+    --secondary: #0f766e;
+    --accent: #f59e0b;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+    --bg-white: #ffffff;
+    --border: #e5e7eb;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--bg-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.tagline {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary);
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.hero-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-illustration svg {
+    width: 300px;
+    height: 300px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Desafio Section */
+.desafio {
+    padding: 80px 20px;
+    background: var(--bg-light);
+}
+
+.desafio h3,
+.missao h3,
+.realizacoes h3,
+.noticias h3,
+.parcerias h3,
+.ctas h3,
+.contato h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: var(--primary-dark);
+    text-align: center;
+}
+
+.section-intro {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.desafio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.desafio-card {
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.desafio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.desafio-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.desafio-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+/* Missão e Valores */
+.missao {
+    padding: 80px 20px;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.valor-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary);
+    transition: transform 0.3s;
+}
+
+.valor-card:hover {
+    transform: translateX(5px);
+}
+
+.valor-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+}
+
+/* Comparação */
+.comparacao {
+    padding: 80px 20px;
+    background: var(--bg-light);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.comparison-table thead {
+    background: var(--primary);
+    color: white;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.comparison-table tbody tr:hover {
+    background: var(--bg-light);
+}
+
+.comparison-table .highlight {
+    background: #fef3c7;
+    font-weight: bold;
+    color: var(--primary-dark);
+}
+
+/* Realizações */
+.realizacoes {
+    padding: 80px 20px;
+}
+
+.realizacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.realizacao-card {
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--primary);
+    transition: all 0.3s;
+}
+
+.realizacao-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.realizacao-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-light);
+    margin-bottom: 10px;
+}
+
+.realizacao-card h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--primary-dark);
+}
+
+.link-arrow {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.link-arrow:hover {
+    color: var(--primary-dark);
+    transform: translateX(5px);
+}
+
+/* Notícias */
+.noticias {
+    padding: 80px 20px;
+    background: var(--bg-light);
+}
+
+.noticias-carousel {
+    position: relative;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.noticia-card {
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticia-card.active {
+    opacity: 1;
+    position: relative;
+}
+
+.noticia-date {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.noticia-card h4 {
+    font-size: 22px;
+    color: var(--primary-dark);
+    margin: 10px 0;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.carousel-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    background: var(--primary);
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Parcerias */
+.parcerias {
+    padding: 80px 20px;
+}
+
+.parceiros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.parceiro-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.parceiro-card:hover {
+    transform: translateY(-5px);
+}
+
+.parceiro-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.parceiro-card h4 {
+    font-size: 20px;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+/* CTAs */
+.ctas {
+    padding: 80px 20px;
+    background: var(--bg-light);
+}
+
+.ctas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.cta-box {
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.cta-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.cta-box h4 {
+    font-size: 20px;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+/* Contato */
+.contato {
+    padding: 80px 20px;
+}
+
+.contato-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-item h4 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.info-item a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-item a:hover {
+    color: var(--primary-dark);
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+/* Footer */
+.footer {
+    background: var(--text-dark);
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    text-align: center;
+    color: #9ca3af;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-illustration svg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-ctas {
+        flex-direction: column;
+    }
+
+    .contato-content {
+        grid-template-columns: 1fr;
+    }
+
+    .table-responsive {
+        font-size: 14px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px;
+    }
+
+    .noticias-carousel {
+        height: auto;
+    }
+
+    .noticia-card {
+        position: relative;
+        opacity: 1;
+        margin-bottom: 20px;
+    }
+
+    .carousel-controls {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .desafio h3,
+    .missao h3,
+    .realizacoes h3,
+    .noticias h3,
+    .parcerias h3,
+    .ctas h3,
+    .contato h3 {
+        font-size: 24px;
+    }
+
+    .desafio-grid,
+    .valores-grid,
+    .realizacoes-grid,
+    .parceiros-grid,
+    .ctas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

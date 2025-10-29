@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PlaNAR - Planador Autônomo para Ressuprimento Logístico. Soberania, Precisão e Sustentabilidade no Céu Brasileiro.">
+    <meta name="keywords" content="drones, UTM, ressuprimento logístico, tecnologia brasileira, defesa">
+    <meta name="author" content="Projeto PlaNAR">
+    <title>PlaNAR - Planador Autônomo para Ressuprimento Logístico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%231e40af'>✈</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1 class="logo">PlaNAR</h1>
+                <p class="tagline">Soberania Tecnológica em Ressuprimento</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#missao">Missão</a></li>
+                <li><a href="#realizacoes">Realizações</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>PlaNAR: A Nova Fronteira do Ressuprimento Logístico Autônomo</h2>
+            <p class="hero-subtitle">Desenvolvendo o Planador Autônomo para Ressuprimento Logístico, uma solução nacional de baixo custo para operações anfíbias e de emergência.</p>
+            <div class="hero-ctas">
+                <a href="#contato" class="btn btn-primary">Saiba Mais</a>
+                <a href="#realizacoes" class="btn btn-secondary">Nossas Realizações</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-illustration">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Planador simplificado -->
+                    <path d="M 100 20 L 150 80 L 100 70 L 50 80 Z" fill="#1e40af" opacity="0.8"/>
+                    <circle cx="100" cy="85" r="8" fill="#1e40af"/>
+                    <line x1="100" y1="93" x2="100" y2="120" stroke="#1e40af" stroke-width="2"/>
+                    <!-- Trajetória -->
+                    <path d="M 30 150 Q 100 100 170 150" stroke="#3b82f6" stroke-width="2" fill="none" stroke-dasharray="5,5" opacity="0.6"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desafio Logístico -->
+    <section class="desafio">
+        <div class="container">
+            <h3>O Desafio Logístico Atual</h3>
+            <p class="section-intro">Em cenários de crise, resgate e operações anfíbias, a logística de ressuprimento é crítica e falha:</p>
+            
+            <div class="desafio-grid">
+                <div class="desafio-card">
+                    <div class="desafio-icon">📍</div>
+                    <h4>Paraquedas Tradicionais</h4>
+                    <p>Imprecisão de até <strong>±100 metros</strong>, resultando em perdas de carga e impossibilidade de recuperação em ambientes hostis.</p>
+                </div>
+                <div class="desafio-card">
+                    <div class="desafio-icon">🚁</div>
+                    <h4>Drones Comerciais</h4>
+                    <p>Capacidade de carga limitada (2-5 kg), autonomia reduzida e <strong>alto custo operacional</strong>.</p>
+                </div>
+                <div class="desafio-card">
+                    <div class="desafio-icon">🌊</div>
+                    <h4>Hovercrafts Importados</h4>
+                    <p>Dependência logística estrangeira, <strong>custos elevados</strong> de importação e manutenção complexa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missão e Valores -->
+    <section id="missao" class="missao">
+        <div class="container">
+            <h3>Nossa Missão</h3>
+            <p class="section-intro">Garantir a <strong>Soberania Tecnológica Nacional</strong> no ressuprimento logístico aéreo, fornecendo uma alternativa autônoma, precisa e economicamente viável.</p>
+            
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <h4>🎯 Precisão</h4>
+                    <p>Pouso com ±10 metros de precisão, 10x mais preciso que paraquedas tradicionais.</p>
+                </div>
+                <div class="valor-card">
+                    <h4>💪 Capacidade</h4>
+                    <p>Até 10 kg de carga útil, adequada para operações de resgate e ressuprimento.</p>
+                </div>
+                <div class="valor-card">
+                    <h4>💰 Viabilidade</h4>
+                    <p>Custo unitário de R$ 15-25k, fração do custo de alternativas importadas.</p>
+                </div>
+                <div class="valor-card">
+                    <h4>🌱 Sustentabilidade</h4>
+                    <p>Design para produção futura em Mycelium, totalmente biodegradável.</p>
+                </div>
+                <div class="valor-card">
+                    <h4>🔬 Validação</h4>
+                    <p>Simulação Integrada (HiL + SiL) em conformidade com padrões europeus.</p>
+                </div>
+                <div class="valor-card">
+                    <h4>🛡️ Soberania</h4>
+                    <p>Solução 100% nacional, sem dependência de fornecedores estrangeiros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparação -->
+    <section class="comparacao">
+        <div class="container">
+            <h3>PlaNAR vs. Alternativas Convencionais</h3>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Aspecto</th>
+                            <th>Paraquedas</th>
+                            <th>Hovercraft</th>
+                            <th>Drone Comercial</th>
+                            <th class="highlight">PlaNAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Precisão de Entrega</strong></td>
+                            <td>±100m</td>
+                            <td>±50m</td>
+                            <td>±5m</td>
+                            <td class="highlight">±10m</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Capacidade de Carga</strong></td>
+                            <td>50-100 kg</td>
+                            <td>200+ kg</td>
+                            <td>2-5 kg</td>
+                            <td class="highlight">10 kg</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custo Unitário</strong></td>
+                            <td>R$ 5-10k</td>
+                            <td>R$ 500k+</td>
+                            <td>R$ 20-50k</td>
+                            <td class="highlight">R$ 15-25k</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tempo de Operação</strong></td>
+                            <td>30-60 min</td>
+                            <td>2-4 horas</td>
+                            <td>20-40 min</td>
+                            <td class="highlight">15-30 min</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Biodegradabilidade</strong></td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td>Não</td>
+                            <td class="highlight">Sim</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Independência Tecnológica</strong></td>
+                            <td>Importado</td>
+                            <td>Importado</td>
+                            <td>Nacional</td>
+                            <td class="highlight">Nacional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Escalabilidade</strong></td>
+                            <td>Limitada</td>
+                            <td>Limitada</td>
+                            <td>Moderada</td>
+                            <td class="highlight">Alta</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Realizações -->
+    <section id="realizacoes" class="realizacoes">
+        <div class="container">
+            <h3>Nossas Realizações e Contribuições</h3>
+            <p class="section-intro">O Projeto PlaNAR vai além do hardware. Nossas construções atuais estabelecem uma base de conhecimento e tecnologia fundamental para o futuro do tráfego aéreo não tripulado no Brasil.</p>
+            
+            <div class="realizacoes-grid">
+                <div class="realizacao-card">
+                    <div class="realizacao-number">01</div>
+                    <h4>Mini Curso sobre UTM e UAS</h4>
+                    <p>Formação essencial sobre Gerenciamento de Tráfego Aéreo Não Tripulado (UTM) e Sistemas de Aeronaves Não Tripuladas (UAS). Capacitação de profissionais e alinhamento com a regulamentação BR-UTM.</p>
+                    <a href="#" class="link-arrow">Acessar Curso →</a>
+                </div>
+                <div class="realizacao-card">
+                    <div class="realizacao-number">02</div>
+                    <h4>Artigo Científico (MRCF)</h4>
+                    <p>Publicação técnica sobre o Sistema de Simulação de Drones com Multi-Agent System (MAS) e Behavior Trees (BT). Validação acadêmica e avanço na coordenação autônoma de múltiplos drones.</p>
+                    <a href="#" class="link-arrow">Ler Artigo →</a>
+                </div>
+                <div class="realizacao-card">
+                    <div class="realizacao-number">03</div>
+                    <h4>Propriedade Intelectual (MRCF)</h4>
+                    <p>Registro de tecnologia (ex: algoritmos de navegação e controle) desenvolvida para o PlaNAR. Proteção e comercialização da tecnologia nacional.</p>
+                    <a href="#" class="link-arrow">Saiba Mais →</a>
+                </div>
+                <div class="realizacao-card">
+                    <div class="realizacao-number">04</div>
+                    <h4>Validação PIPE-1</h4>
+                    <p>Conclusão da fase de Validação Funcional por Simulação Integrada (HiL + SiL) do design do planador. Redução de riscos e otimização do design antes da prototipagem física (PIPE-2).</p>
+                    <a href="#" class="link-arrow">Detalhes →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notícias -->
+    <section id="noticias" class="noticias">
+        <div class="container">
+            <h3>Notícias Importantes sobre UTM</h3>
+            <p class="section-intro">Acompanhe os avanços do Projeto BR-UTM e o futuro regulatório do tráfego aéreo não tripulado no Brasil.</p>
+            
+            <div class="noticias-carousel">
+                <div class="noticia-card active">
+                    <div class="noticia-date">Abril 2024</div>
+                    <h4>DECEA Realiza Primeiro Ensaio Operacional do Projeto BR-UTM</h4>
+                    <p>O teste foi realizado em São Carlos-SP, com participação de empresas parceiras, demonstrando a viabilidade do sistema nacional de gestão de tráfego aéreo não tripulado.</p>
+                    <a href="https://www.decea.mil.br" target="_blank" class="link-arrow">Leia Mais →</a>
+                </div>
+                <div class="noticia-card">
+                    <div class="noticia-date">Julho 2025</div>
+                    <h4>BR-UTM: Implementação a partir de Janeiro de 2026</h4>
+                    <p>O Brasil começa a implementar o BR-UTM, um sistema nacional de controle e regulação do tráfego aéreo não tripulado, voltado para drones e eVTOLs.</p>
+                    <a href="https://www.defesaaereanaval.com.br" target="_blank" class="link-arrow">Leia Mais →</a>
+                </div>
+                <div class="noticia-card">
+                    <div class="noticia-date">Agosto 2025</div>
+                    <h4>DECEA Faz Segundo Teste em Projeto para Organizar o Tráfego de Drones</h4>
+                    <p>Iniciado em 2023, o Projeto BR-UTM continua avançando com novos testes operacionais, consolidando a metodologia para regulamentação do espaço aéreo.</p>
+                    <a href="https://aeroin.net" target="_blank" class="link-arrow">Leia Mais →</a>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="changeNoticia(-1)">❮</button>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentNoticia(0)"></span>
+                    <span class="dot" onclick="currentNoticia(1)"></span>
+                    <span class="dot" onclick="currentNoticia(2)"></span>
+                </div>
+                <button class="carousel-btn next" onclick="changeNoticia(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcerias -->
+    <section class="parcerias">
+        <div class="container">
+            <h3>Alinhamento Estratégico e Parcerias</h3>
+            <p class="section-intro">O Projeto PlaNAR está sediado na Incubaero (DCTA/ITA) e alinha-se com os principais esforços de regulamentação e inovação nacional.</p>
+            
+            <div class="parceiros-grid">
+                <div class="parceiro-card">
+                    <div class="parceiro-icon">🏫</div>
+                    <h4>ITA</h4>
+                    <p>Instituto Tecnológico de Aeronáutica - Base de excelência acadêmica e tecnológica em engenharia aeroespacial.</p>
+                </div>
+                <div class="parceiro-card">
+                    <div class="parceiro-icon">📡</div>
+                    <h4>BR-UTM / DECEA</h4>
+                    <p>Alinhamento com o Projeto BR-UTM e o Departamento de Controle do Espaço Aéreo. Implementação a partir de 2026.</p>
+                </div>
+                <div class="parceiro-card">
+                    <div class="parceiro-icon">🚀</div>
+                    <h4>Aviação do Amanhã</h4>
+                    <p>Entidade que promove o debate e o avanço da aviação de nova geração no Brasil.</p>
+                </div>
+                <div class="parceiro-card">
+                    <div class="parceiro-icon">✈️</div>
+                    <h4>DECEA</h4>
+                    <p>Órgão regulador que define o futuro operacional de sistemas como o PlaNAR.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chamadas para Ação -->
+    <section class="ctas">
+        <div class="container">
+            <h3>Próximos Passos</h3>
+            <p class="section-intro">Junte-se a nós na construção do futuro da logística aérea autônoma no Brasil.</p>
+            
+            <div class="ctas-grid">
+                <div class="cta-box">
+                    <h4>📚 Capacite-se em UTM e UAS</h4>
+                    <p>Acesse nosso mini curso gratuito e entenda o futuro da aviação não tripulada.</p>
+                    <a href="#" class="btn btn-primary">Acessar Curso</a>
+                </div>
+                <div class="cta-box">
+                    <h4>🤝 Prepare-se para ser um Provedor UTM</h4>
+                    <p>Deseja integrar sua tecnologia ao ecossistema BR-UTM? Agende uma consulta com nossa equipe.</p>
+                    <a href="#contato" class="btn btn-primary">Agendar Consulta</a>
+                </div>
+                <div class="cta-box">
+                    <h4>💼 Invista no Futuro</h4>
+                    <p>Busca de financiamento PIPE-2 para prototipagem e testes de voo em ambiente controlado.</p>
+                    <a href="#contato" class="btn btn-primary">Entrar em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h3>Entre em Contato</h3>
+            <p class="section-intro">Tem dúvidas ou interesse em colaborar? Fale conosco!</p>
+            
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <h4>📍 Localização</h4>
+                        <p>Incubaero - Fundação Casimiro Montenegro Filho<br>
+                        DCTA, São José dos Campos - SP</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📧 Email</h4>
+                        <p><a href="mailto:contato@planar.org">contato@planar.org</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📱 Telefone</h4>
+                        <p><a href="tel:+55119999-9999">+55 (11) 99999-9999</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🌐 Redes Sociais</h4>
+                        <p>
+                            <a href="#" target="_blank">LinkedIn</a> | 
+                            <a href="#" target="_blank">Twitter</a> | 
+                            <a href="#" target="_blank">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <form class="contato-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="investimento">Investimento / Financiamento</option>
+                            <option value="parceria">Parceria / Colaboração</option>
+                            <option value="utm">Consulta sobre UTM</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PlaNAR</h4>
+                    <p>Planador Autônomo para Ressuprimento Logístico</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#missao">Missão</a></li>
+                        <li><a href="#realizacoes">Realizações</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Parcerias</h4>
+                    <ul>
+                        <li>ITA</li>
+                        <li>BR-UTM / DECEA</li>
+                        <li>Aviação do Amanhã</li>
+                        <li>DECEA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Projeto PlaNAR. Todos os direitos reservados.</p>
+                <p>Desenvolvido por J. T. VEIGA para o futuro da tecnologia brasileira.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

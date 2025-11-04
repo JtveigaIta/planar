@@ -1,3 +1,11 @@
+**🛰️ Desenvolvido para pesquisa, inovação e segurança na aviação não tripulada do Brasil.**  
+
+# 📚 Créditos e Licenciamento
+
+**Autor:** Jackson Tavares Veiga
+**Instituição:** ITA / SAC / Projeto BR-UTM
+**Ano:** 2025
+
 # PlaNAR Landing Page
 
 Landing page profissional para o Projeto PlaNAR - Planador Autônomo para Ressuprimento Logístico.
@@ -112,3 +120,11 @@ Este projeto é de código aberto e pode ser usado livremente.
 ---
 
 **Desenvolvido com ❤️ para o Projeto PlaNAR**
+
+**🛰️ Desenvolvido para pesquisa, inovação e segurança na aviação não tripulada do Brasil.**  
+
+# 📚 Créditos e Licenciamento
+
+**Autor:** Jackson Tavares Veiga
+**Instituição:** ITA / SAC / Projeto BR-UTM
+**Ano:** 2025
